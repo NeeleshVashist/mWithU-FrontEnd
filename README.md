@@ -2,11 +2,11 @@
 
 ### *Information about folders*
 
-##### **css -**
+**css -**
 for storing css files
 
-##### **media -**
+**media -**
 for storing media stuff like images
 
-##### **DemoImages -**
+**DemoImages -**
 for storing the demo images of how our page will look like
