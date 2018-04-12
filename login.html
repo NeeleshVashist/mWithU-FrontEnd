@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LogIn</title>
 
-    <!-- Internal CSS File -->
+    <!-- Link to CSS File -->
     <style>
     body, html {
     height: 100%;
@@ -32,7 +32,8 @@
     .container{
         padding: 45px;
         background-color: rgb(0,0,0); 
-        opacity: 0.8; 
+        /*opacity: 0.5; */
+        background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     }
     .card-body{
         color: white;
@@ -58,11 +59,18 @@
         margin-top: 35px;
         margin-left: 30px;
         margin-right: 30px;
-    }
+        }
     input{
-            border:none;
-            background:#10243D;
-            border-bottom:0.5px solid #A0AAAA;
+            margin-bottom: 20px!important;
+            outline-style: none!important;
+            border: none!important;
+            box-shadow: none!important;
+            border-bottom: 1px solid grey!important;
+            background-color:transparent !important;
+        }
+        input:focus
+        {
+            color:#fff!important;
         }
 </style>
     <!-- Link for Shortcut Icon -->
@@ -89,17 +97,15 @@
                 <h2>Login</h2>
                     <h4 class="font-weight-light">Hello! let's get started</h4>
             </div>
-            <!--LOGIN FORM-->
             <form action="#">
-    <div class="form-group">
-      <label for="email">UserName</label>
-      <input type="email" class="form-control" id="email" placeholder="UserName" name="email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
-    </div>
     
+      <label for="email" class="sr-only">UserName</label>
+      <input type="email" class="form-control " id="email" placeholder="UserName" name="email">
+    
+    
+      <label for="pwd" class="sr-only">Password</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+        
     <button type="submit" class="btn">Submit</button>
     <br>
     <center><a href="#" class="fpass">Forgot password?</a></center>
